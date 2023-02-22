@@ -6,8 +6,4 @@ provider "aws"{
 resource "aws_s3_bucket" "first"{
   bucket = "aws-encisor-tech001"
 }
-resource "aws_s3_bucket_acl" "example1" {
-  bucket = aws_s3_bucket.first.id
-  acl    = "private"
 
-}
