@@ -5,5 +5,9 @@ provider "aws"{
 }
 resource "aws_s3_bucket" "first"{
   bucket = "aws-encisor-tech001"
+  tags = {
+    Name        = "aws-encisor-tech001"
+    Environment = "Production"
+  }
 }
 
